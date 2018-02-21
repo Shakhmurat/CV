@@ -1,0 +1,73 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# deployer ssh connection configuration
+deploy.ssh-config.php
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+/config/local.php
+
+#components js from composer
+/components/jquery
+/components/select2
+/components/require.config.js
+/components/require.css
+/components/require.js
+/components/require-built.js
+
+
+# composer itself is not needed
+composer.phar
+
+# deployer itself is not needed
+deployer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+*.sublime-project
+*.sublime-workspace
+
+/public/images
+/public/styles
+/public/scripts
+/public/*.html
+/public/*.txt
+/public/*.ico
+/public/*.png
+/public/.htaccess
+
+runtime
+
+/web/*.html
+/web/bower_components
+/web/.htaccess
+/web/media
+/web/assets
+/web/js/apps
+/web/js/pages
+/web/js/init.js
+/web/libs

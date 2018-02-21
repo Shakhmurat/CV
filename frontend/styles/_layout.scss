@@ -1,0 +1,133 @@
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+	position: relative;
+	font-family: $font-primary-regular;
+	font-size: 94%;
+	line-height: 1.2;
+	color: $color-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.header {
+	padding-top: 10px;
+	&-img {
+		img {		
+	    height: 100%;
+	    object-fit: cover;
+		}
+	}
+	&-content {
+		&-primary {
+			padding: 1.3em 2.2em;
+		}
+		&-primary {
+			width: calc(70% + 15px);
+		}
+		&-aside {
+			width: calc(30% - 25px);
+			padding: 1.3em 2.2em 1.3em 0;
+		}
+		&-editable {
+			position: relative;
+			cursor: pointer;
+			&--tag {
+				width: 70%;
+				padding: 0.3em 0;
+			}
+			.form-group {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			}
+			.btn-group {
+				position: absolute;
+				top: 50%;
+				right: 1rem;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+.main {
+  padding-bottom: 10px;
+}
+
+.container {
+	width: 980px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class*="col-"] {
+	min-height: 240px;
+}
+
+.col {
+	&-xs {
+		width: 25%;
+	}
+	&-sm {
+		width: 50%;	
+	}
+	&-md {
+		width: 75%;
+	}
+	&-lg {
+		width: 100%;
+	}
+}
+
+.text {
+	&-center {
+		text-align: center;	
+	}
+	&-right {
+		text-align: right;	
+	}
+}
+
+.bg {
+	&-gray {
+		background-color: $color-gray;
+		&-light {
+			background-color: $color-gray-light;
+		}
+		&-dark {
+			background-color: $color-gray-dark;
+		}
+	}
+	&-black {
+		background-color: $color-black;
+	}
+	&-danger {
+		background-color: $color-danger;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+html[data-useragent*='MSIE 10.0'] {
+	.about-item-body {
+	 	height: auto;
+	}
+}

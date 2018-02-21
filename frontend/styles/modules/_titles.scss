@@ -1,0 +1,19 @@
+
+[class*="title--"] {
+	font-family: $font-primary-bold;
+}
+
+.title--primary {
+	margin-bottom: 0.5rem;
+	font-size: 2em;
+}
+
+.title--small {
+	font-size: 1.2em;
+}
+
+.title--big {
+	margin-bottom: 0;
+	font-size: 3em;
+	line-height: 1;
+}

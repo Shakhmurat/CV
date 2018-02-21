@@ -1,0 +1,58 @@
+
+.form-group {
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  padding-left: 0.4rem;
+  padding-right: 4.2rem;
+  margin-left: -0.4rem;
+  font-family: $font-primary-regular;
+  font-size: 1em;
+  border: 1px solid $color-gray;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: border $transition-primary;
+  &:hover {
+    border-color: rgba($color-primary,.6);
+    transition: none;
+  }
+  &:focus,
+  &:active {
+    border-color: rgba($color-primary, .8);
+    box-shadow: 0 0 2px rgba($color-primary,.2);
+    outline: none;
+    transition: none;
+  }
+  &--sm {
+    height: 1.3em;
+  }
+  &--md {
+    height: 1.8em;
+    padding-right: 8.2rem;
+  }
+  &--lg {
+    height: 1.2em;
+    font-size: 2em; 
+  }
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+.select {
+  display: block;
+  font-family: $font-primary-regular;
+  outline: none !important;
+  cursor: pointer;
+}
+
+// disabling yellow background for chromes autofill
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
